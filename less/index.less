@@ -123,7 +123,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         font-family: 'Roboto', sans-serif;   
-        margin: 0px 0px 20px 0px;
+        //margin: 0px 0px 20px 0px;
     }
 
     // p:last-child {
@@ -132,14 +132,17 @@ nav {
     // }
     
     .teamup-button {
-        background: white;
-        border: 1px solid black;
+        background: darkgray;
+        border: 1px solid darkgray;
+        color: white;
+        font-weight: bold;
         font-size: 16px;
         font-family: 'Titillium Web', sans-serif;
         vertical-align: middle;
         max-width: 155px;
         height: 32px;
-        margin: 0px 4% 20px 0px;
+        margin: 20px 0px 0px 0px;
+        border-radius: 5px;
     }
 }
 
@@ -148,7 +151,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     // background-color: lightgray;
-    min-height: 200px;
+    height: auto;
     margin: 40px 2%;
 }
 
@@ -157,27 +160,52 @@ nav {
     width: 48%;
     flex-direction: column;
     margin: 0px 2% 0px 0px;
+
     h1 {
         font-family: 'Roboto', sans-serif;        
         font-size: 2em;
         margin: 0px 0px 20px;
-        
+        font-weight: bold;
     }
 
     p {
         font-family: 'Roboto', sans-serif;   
-        // margin: 0px 4%;
+        // margin: 100px;
+    }
+}
+
+.table {
+    border: 1px solid black;
+    padding: 10px 0px;
+
+    line {
+        display: flex;
+        height: 1px;
+        // width: 100%;
+        border: 0;
+        border-top: 1px solid black;
+        // margin: 1em 4%;
+        margin: 10px 0px;
+        padding: 0;
+        // margin-bottom: 40px;
+    }
+
+    p {
+        padding: 0px 0px 0px 4%;
     }
 }
 
 .middle-section-content:last-child{
     margin: 0px;
+    
 }
 
 .lower-section-container {
     display: flex;
-    margin: 40px 2%;
     // padding: 60px 4% 20px;
+    width: 96%;
+    height: auto;
+    margin: 40px 2%;
 
 }
 
@@ -221,6 +249,35 @@ line2 {
         margin-top: 20px;
         margin-bottom: 20px;
         align-items: center;
+    }
+
+    .middle-section-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // background-color: lightgray;
+        height: auto;
+        margin: 40px 2%;
+    }
+
+    .middle-section-content{
+        display: flex;
+        width: 96%;
+        flex-direction: column;
+        margin: 0px 2% 20px 0px;
+
+        h1 {
+            font-family: 'Roboto', sans-serif;        
+            font-size: 2em;
+            margin: 0px 0px 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;   
+            // margin: 100px;
+        }
     }
 
     line2 {

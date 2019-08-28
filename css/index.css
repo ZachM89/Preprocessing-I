@@ -186,23 +186,25 @@ nav div {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Roboto', sans-serif;
-  margin: 0px 0px 20px 0px;
 }
 .upper-section-container .teamup-button {
-  background: white;
-  border: 1px solid black;
+  background: darkgray;
+  border: 1px solid darkgray;
+  color: white;
+  font-weight: bold;
   font-size: 16px;
   font-family: 'Titillium Web', sans-serif;
   vertical-align: middle;
   max-width: 155px;
   height: 32px;
-  margin: 0px 4% 20px 0px;
+  margin: 20px 0px 0px 0px;
+  border-radius: 5px;
 }
 .middle-section-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 200px;
+  height: auto;
   margin: 40px 2%;
 }
 .middle-section-content {
@@ -215,15 +217,33 @@ nav div {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   margin: 0px 0px 20px;
+  font-weight: bold;
 }
 .middle-section-content p {
   font-family: 'Roboto', sans-serif;
+}
+.table {
+  border: 1px solid black;
+  padding: 10px 0px;
+}
+.table line {
+  display: flex;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 10px 0px;
+  padding: 0;
+}
+.table p {
+  padding: 0px 0px 0px 4%;
 }
 .middle-section-content:last-child {
   margin: 0px;
 }
 .lower-section-container {
   display: flex;
+  width: 96%;
+  height: auto;
   margin: 40px 2%;
 }
 line {
@@ -255,6 +275,29 @@ line2 {
     margin-top: 20px;
     margin-bottom: 20px;
     align-items: center;
+  }
+  .middle-section-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    margin: 40px 2%;
+  }
+  .middle-section-content {
+    display: flex;
+    width: 96%;
+    flex-direction: column;
+    margin: 0px 2% 20px 0px;
+  }
+  .middle-section-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin: 0px 0px 20px;
+    font-weight: bold;
+  }
+  .middle-section-content p {
+    font-family: 'Roboto', sans-serif;
   }
   line2 {
     display: flex;
