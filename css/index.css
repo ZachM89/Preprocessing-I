@@ -159,6 +159,8 @@ nav div {
   display: flex;
   flex-direction: column;
   background-color: lightgray;
+  border-radius: 3px;
+  border: 1px solid lightgray;
   width: 96%;
   height: auto;
   margin: 0px 2%;
@@ -200,6 +202,9 @@ nav div {
   margin: 20px 0px 0px 0px;
   border-radius: 5px;
 }
+.upper-section-container .teamup-button a {
+  text-decoration: none;
+}
 .middle-section-container {
   display: flex;
   flex-wrap: wrap;
@@ -223,14 +228,14 @@ nav div {
   font-family: 'Roboto', sans-serif;
 }
 .table {
-  border: 1px solid black;
+  border: 1px solid darkgray;
   padding: 10px 0px;
 }
 .table line {
   display: flex;
   height: 1px;
   border: 0;
-  border-top: 1px solid black;
+  border-top: 1px solid darkgray;
   margin: 10px 0px;
   padding: 0;
 }
@@ -242,15 +247,33 @@ nav div {
 }
 .lower-section-container {
   display: flex;
+  flex-direction: column;
   width: 96%;
   height: auto;
   margin: 40px 2%;
+}
+.lower-section-container h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin: 0px 0px 10px;
+  font-weight: bold;
+}
+.lower-section-container line {
+  margin: 10px 0px 10px 0px;
+  border-top: 1px solid darkgray;
+}
+.lower-section-container span {
+  font-family: 'Roboto', sans-serif;
+}
+.lower-section-row {
+  display: flex;
+  justify-content: space-between;
 }
 line {
   display: flex;
   height: 1px;
   border: 0;
-  border-top: 1px solid black;
+  border-top: 1px solid darkgray;
   margin: 20px 0px 20px 0px;
   padding: 0;
 }

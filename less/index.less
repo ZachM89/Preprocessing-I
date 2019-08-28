@@ -91,6 +91,8 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: lightgray;
+    border-radius: 3px;
+    border: 1px solid lightgray;
     width: 96%;
     height: auto;
     margin: 0px 2%;
@@ -132,6 +134,9 @@ nav {
     // }
     
     .teamup-button {
+        a {
+            text-decoration: none;
+        }
         background: darkgray;
         border: 1px solid darkgray;
         color: white;
@@ -175,7 +180,7 @@ nav {
 }
 
 .table {
-    border: 1px solid black;
+    border: 1px solid darkgray;
     padding: 10px 0px;
 
     line {
@@ -183,7 +188,7 @@ nav {
         height: 1px;
         // width: 100%;
         border: 0;
-        border-top: 1px solid black;
+        border-top: 1px solid darkgray;
         // margin: 1em 4%;
         margin: 10px 0px;
         padding: 0;
@@ -202,11 +207,30 @@ nav {
 
 .lower-section-container {
     display: flex;
+    flex-direction: column;
     // padding: 60px 4% 20px;
     width: 96%;
     height: auto;
     margin: 40px 2%;
+    h1 {
+        font-family: 'Roboto', sans-serif;  
+        font-size: 2em;
+        margin: 0px 0px 10px;
+        font-weight: bold;   
+    }
+    line {
+        margin: 10px 0px 10px 0px;
+        border-top: 1px solid darkgray;
+    }
 
+    span {
+        font-family: 'Roboto', sans-serif; 
+    }
+}
+
+.lower-section-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 line {
@@ -214,7 +238,7 @@ line {
     height: 1px;
     // width: 100%;
     border: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid darkgray;
     // margin: 1em 4%;
     margin: 20px 0px 20px 0px;
     padding: 0;
